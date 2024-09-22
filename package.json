@@ -1,0 +1,34 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "electron-tray-window": "^1.2.7"
+  },
+  "build": {
+    "appId": "com.my-electron-app.app",
+    "productName": "MyElectronApp",
+    "files": [
+      "index.js",
+      "package.json",
+      "node_modules",
+      "icon.png"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
+
