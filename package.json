@@ -1,7 +1,7 @@
 {
   "name": "my-electron-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
@@ -21,10 +21,10 @@
     "appId": "com.my-electron-app.app",
     "productName": "MyElectronApp",
     "files": [
-      "index.js",
+      "src/index.js",
       "package.json",
       "node_modules",
-      "icon.png"
+      "src/icons/icon.png"
     ],
     "directories": {
       "output": "dist"
